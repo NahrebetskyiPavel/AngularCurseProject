@@ -47,10 +47,12 @@ export class CalendarComponent implements OnInit {
             }
           })
       })
+      console.log(calendar)
     }
     this.calendar = calendar
   }
   select(day:moment.Moment){
     this.dateService.changeDate(day)
+    console.log(day)
   }
 }

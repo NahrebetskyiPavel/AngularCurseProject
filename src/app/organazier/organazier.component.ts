@@ -14,7 +14,7 @@ export class OrganazierComponent implements OnInit {
   form: FormGroup
   tasks:Task[]=[]
 
-  constructor(private dateService:DateService ,
+  constructor(public dateService:DateService ,
               private taskService: TaskService) { }
 
   ngOnInit() {

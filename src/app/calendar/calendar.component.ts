@@ -22,7 +22,7 @@ interface week{
 export class CalendarComponent implements OnInit {
   calendar:week[]
 
-  constructor(private dateService:DateService) { }
+  constructor(public dateService:DateService) { }
 
   ngOnInit() {
     this.dateService.date.subscribe(this.generate.bind(this))
